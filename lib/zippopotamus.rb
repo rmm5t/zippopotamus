@@ -1,12 +1,11 @@
 require "zippopotamus/version"
 
 module Zippopotamus
-  # Your code goes here...
-
-  def self.by_postal_code
+  def self.by_postal_code(postal_code, country = "us")
   end
+  singleton_class.send(:alias_method, :by_zip, :by_postal_code)
 
-  def self.by_name
+  def self.by_name(city, state, country = "us")
   end
 
   class Place

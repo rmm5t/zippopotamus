@@ -13,13 +13,16 @@ class ZippopotamusTest < Minitest::Test
     skip("Zippopotamus.by_postal_code('80027')")
   end
 
+  def test_should_respond_to_by_postal_code
+    assert Zippopotamus.respond_to?(:by_zip)
+  end
+
   def test_by_zip_should_alias_by_postal_code
     skip("Zippopotamus.by_zip('80027')")
   end
 
   def test_by_postal_code_should_support_other_countries
     skip("Zippopotamus.by_postal_code('4400', 'AU')")
-    skip("implement this")
   end
 
   def test_by_postal_code_should_raise_an_error_when_not_found
