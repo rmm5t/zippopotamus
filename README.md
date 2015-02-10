@@ -5,6 +5,12 @@ Ruby wrapper around the Zippopotam.us API. **Zip Code Galore!** Postal Codes and
 * Give it a postal code to get back the city, state, longitude, and latitude.
 * Give it a city and state to get back a list of possible postal codes.
 
+## DISCLAIMER: Not Ready Yet, But Soon
+
+I just started on this gem. It's not real yet. All
+[Readme Driven Development](http://tom.preston-werner.com/2010/08/23/readme-driven-development.html)
+so far.
+
 ## Installation
 
 Add this line to your application's Gemfile:
