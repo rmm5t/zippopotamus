@@ -41,6 +41,12 @@ place.post_code            # => "90201"
 place.longitude            # => "-118.4065"
 place.latitude             # => "34.0901"
 
+# Aliases also exist for code readability
+place.name                 # => "Beverly Hills"
+place.city                 # => "Beverly Hills"
+place.postal_code          # => "90201"
+place.zip                  # => "90201"
+
 # Also aliased as `by_zip`
 places = Zippopotamus.by_zip("90210")
 

@@ -45,29 +45,3 @@ class ZippopotamusTest < Minitest::Test
     skip("Zippopotamus.by_name('Fake City', 'VA', 'US')")
   end
 end
-
-class Zippopotamus::PlaceTest < Minitest::Test
-  def test_should_exist
-    assert Zippopotamus.const_defined?(:Place)
-  end
-
-  def test_should_mimic_a_hash
-    skip("place['post code']")
-  end
-
-  def test_should_convert_keys_with_spaces_to_underscores
-    skip("place['post_code']")
-  end
-
-  def test_should_support_indifferent_access
-    skip("place[:post_code]")
-  end
-
-  def test_should_support_method_syntax
-    skip("place.post_code")
-  end
-
-  def test_should_convert_a_full_zippopotamus_api_response_into_an_array_of_places
-    skip("Zippopotamus::Place.build(api_response)")
-  end
-end
