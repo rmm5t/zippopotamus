@@ -1,6 +1,6 @@
 # Zippopotamus [![Gem Version](http://img.shields.io/gem/v/zippopotamus.svg)](https://rubygems.org/gems/zippopotamus) [![Build Status](https://img.shields.io/travis/rmm5t/zippopotamus.svg)](http://travis-ci.org/rmm5t/zippopotamus)
 
-Ruby wrapper around the Zippopotam.us API. **Zip Code Galore!** Postal Codes and Zip Codes made easy.
+Ruby wrapper around the **[Zippopotam.us](http://zippopotam.us/)** API. **Zip Code Galore!** Postal Codes and Zip Codes made easy.
 
 * Give it a postal code to get back the city, state, longitude, and latitude.
 * Give it a city and state to get back a list of possible postal codes.
