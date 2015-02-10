@@ -1,13 +1,16 @@
-# Zippopotamus
+# Zippopotamus [![Gem Version](http://img.shields.io/gem/v/zippopotamus.svg)](https://rubygems.org/gems/zippopotamus) [![Build Status](https://img.shields.io/travis/rmm5t/zippopotamus.svg)](http://travis-ci.org/rmm5t/zippopotamus)
 
-TODO: Write a gem description
+Ruby wrapper around the Zippopotam.us API. **Zip Code Galore!** Postal Codes and Zip Codes made easy.
+
+* Give it a postal code to get back the city, state, longitude, and latitude.
+* Give it a city and state to get back a list of possible postal codes.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'zippopotamus'
+gem "zippopotamus"
 ```
 
 And then execute:
@@ -20,7 +23,58 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require "zippopotamus"
+
+# ============================================================
+# Lookup the city, state, long, and lat by postal code (defaults to "US").
+#
+places = Zippopotamus.by_postal_code("90210")
+places.size                # => 1
+place = places.first
+place.country              # => "United States"
+place.country_abbreviation # => "US"
+place.state                # => "California"
+place.state_abbreviation   # => "CA"
+place.place_name           # => "Beverly Hills"
+place.post_code            # => "90201"
+place.longitude            # => "-118.4065"
+place.latitude             # => "34.0901"
+
+# Also aliased as `by_zip`
+places = Zippopotamus.by_zip("90210")
+
+# Specify a different country
+places = Zippopotamus.by_postal_code("4400", "AU")
+place = places.first
+place.country              # => "Australia"
+place.country_abbreviation # => "AU"
+place.state                # => "Queensland"
+place.state_abbreviation   # => "QLD"
+place.place_name           # => "Kingsthorpe"
+place.post_code            # => "4400"
+place.longitude            # => "151.8333"
+place.latitude             # => "-27.4667"
+
+# ============================================================
+# Lookup the postal code by city and state (defaults to "US").
+#
+places = Zippopotamus.by_name("Belmont", "MA", "US")
+places.size                    # => 2
+places[0].country              # => "United States"
+places[0].country_abbreviation # => "US"
+places[0].state                # => "Massachusetts"
+places[0].state_abbreviation   # => "MA"
+places[0].place_name           # => "Belmont"
+places[0].post_code            # => "02178"
+places[0].longitude            # => "-71.4594"
+places[0].latitude             # => "34.0901"
+# ---
+places[1].post_code            # => "02478"
+places[1].longitude            # => "-71.2044"
+places[1].latitude             # => "42.4128"
+```
+
 
 ## Contributing
 
