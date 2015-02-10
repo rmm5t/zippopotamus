@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Zippopotamus::VERSION
   spec.authors       = ["Ryan McGeary"]
   spec.email         = ["ryan@mcgeary.org"]
-  spec.summary       = "Ruby wrapper around the Zippopotam.us API."
-  spec.description   = "Lookup the city, state, longitude, and latitude for a given country and postal code, or lookup a list of possible postal codes for a given country, state, and city."
+  spec.summary       = "Ruby wrapper for the Zippopotam.us API"
+  spec.description   = "#{spec.summary}. Lookup the city, state, longitude, and latitude for a given country and postal code, or lookup a list of possible postal codes for a given country, state, and city."
   spec.homepage      = "https://github.com/rmm5t/zippopotamus"
   spec.license       = "MIT"
 
