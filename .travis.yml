@@ -1,7 +1,10 @@
 language: ruby
+cache: bundler
 rvm:
   - 2.1
   - 1.9.3
   - jruby-19mode
 gemfile:
   - Gemfile
+matrix:
+  fast_finish: true
