@@ -1,15 +1,37 @@
-# Zippopotamus [![Gem Version](http://img.shields.io/gem/v/zippopotamus.svg)](https://rubygems.org/gems/zippopotamus) [![Build Status](https://img.shields.io/travis/rmm5t/zippopotamus.svg)](http://travis-ci.org/rmm5t/zippopotamus)
+# Zippopotamus
+
+[![Gem Version](http://img.shields.io/gem/v/zippopotamus.svg)](https://rubygems.org/gems/zippopotamus)
+[![Build Status](https://img.shields.io/travis/rmm5t/zippopotamus.svg)](http://travis-ci.org/rmm5t/zippopotamus)
+[![Gem Downloads](https://img.shields.io/gem/dt/zippopotamus.svg)](https://rubygems.org/gems/zippopotamus)
 
 Ruby wrapper around the **[Zippopotam.us](http://zippopotam.us/)** API. **Zip Code Galore!** Postal Codes and Zip Codes made easy.
 
 * Give it a postal code to get back the city, state, longitude, and latitude.
 * Give it a city and state to get back a list of possible postal codes.
 
-## DISCLAIMER: Not Ready Yet, But Soon
+## DISCLAIMER: Not Ready Yet, But Some Day
 
 I just started on this gem. It's not real yet. All
 [Readme Driven Development](http://tom.preston-werner.com/2010/08/23/readme-driven-development.html)
 so far.
+
+---
+
+**How You Can Help**
+
+[![Square Cash](http://img.shields.io/badge/square%20cash-$rmm5t-brightgreen.svg)][square]
+[![PayPal](http://img.shields.io/badge/paypal-rmm5t-blue.svg)][paypal]
+[![Book a Codementor session](http://img.shields.io/badge/codementor-book%20a%20session-orange.svg)][codementor]
+
+If you like this project, [buy me a coffee][paypal], or [book a session with me][codementor], or donate bitcoin: `1rmm5tv6f997JK5bLcGbRCZyVjZUPkQ2m`
+
+[square]: https://cash.me/$rmm5t/5 "Donate to rmm5t for open source!"
+[paypal]: https://www.paypal.me/rmm5t/5 "Donate to rmm5t for open source!"
+[bitcoin]: bitcoin:1rmm5tv6f997JK5bLcGbRCZyVjZUPkQ2m?amount=0.01&label=Coffee%20to%20rmm5t%20for%20Open%20Source "Buy rmm5t a coffee for open source!"
+[codementor]: https://www.codementor.io/rmm5t?utm_campaign=profile&utm_source=button-rmm5t&utm_medium=shields "Book a session with rmm5t on Codementor!"
+
+[![Twitter](https://img.shields.io/twitter/follow/rmm5t.svg?style=social)](https://twitter.com/rmm5t)
+[![Stack Overflow](https://img.shields.io/stackexchange/stackoverflow/r/8985.svg?style=social)](http://stackoverflow.com/users/8985/ryan-mcgeary)
 
 ## Installation
 
