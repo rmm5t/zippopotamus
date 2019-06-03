@@ -17,13 +17,13 @@ class PlaceTest < Minitest::Test
   def test_should_mimic_a_read_only_hash
     assert_equal "19425",           @place["post code"]
     assert_equal "Pennsylvania",    @place["state"]
-    assert_equal nil,               @place["bogus"]
+    assert_nil @place["bogus"]
   end
 
   def test_should_convert_keys_with_spaces_to_underscores
     assert_equal "19425",           @place["post_code"]
     assert_equal "PA",              @place["state_abbreviation"]
-    assert_equal nil,               @place["something_else"]
+    assert_nil @place["something_else"]
   end
 
   def test_should_support_indifferent_access
