@@ -1,7 +1,7 @@
 # Zippopotamus
 
 [![Gem Version](http://img.shields.io/gem/v/zippopotamus.svg)](https://rubygems.org/gems/zippopotamus)
-[![Build Status](https://img.shields.io/travis/rmm5t/zippopotamus.svg)](http://travis-ci.org/rmm5t/zippopotamus)
+[![Build Status](https://github.com/rmm5t/zippopotamus/workflows/CI/badge.svg)](https://github.com/rmm5t/zippopotamus/actions?query=workflow%3ACI)
 [![Gem Downloads](https://img.shields.io/gem/dt/zippopotamus.svg)](https://rubygems.org/gems/zippopotamus)
 
 Ruby wrapper around the **[Zippopotam.us](http://zippopotam.us/)** API. **Zip Code Galore!** Postal Codes and Zip Codes made easy.
